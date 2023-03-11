@@ -2,9 +2,9 @@ import { getMonth, repeatWord, countDown } from "../../utils/index.js";
 
 describe("Test for getMonth function", ()=>{
     it("Should be correctly if the number of month from 1 to 12 and invalid number", () => {
-        expect(getMonth(11)).toBe('ноябрь');
-        expect(getMonth('Не число')).toBe('Ошибка. Должно быть число');
-        expect(getMonth(15)).toBe('Число не попадает в диапазон');
+        expect(getMonth(11)).toBe('November');
+        expect(getMonth('Not a number')).toBe('Error. There must be a number');
+        expect(getMonth(15)).toBe('Number out of range');
     })
 })
 
