@@ -9,8 +9,8 @@ describe("Test for getMonth function", ()=>{
 })
 
 describe("Test for repeatWord function", ()=>{
-    const word = 'Test';
-    const correctAnswer = 'Test1, Test2, Test3, Test4, Test5';
+    const word = 'Homework';
+    const correctAnswer = 'Homework1, Homework2, Homework3, Homework4, Homework5';
     const count = 5;
     it("it is correct if the required quantity of the output", () => {
         expect(repeatWord(word, count)).toBe(correctAnswer);
