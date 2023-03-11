@@ -18,8 +18,8 @@ describe("Test for repeatWord function", ()=>{
 })
 
 describe("countDown", ()=>{
-    const number = 7;
-    const correctAnswer = '7 6 5 4 3 2 1';
+    const number = 5;
+    const correctAnswer = '5 4 3 2 1';
     it("Should be correctly if the sequence of numbers is in reverse order", () => {
         expect(countDown(number)).toBe(correctAnswer);
     })
