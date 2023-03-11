@@ -1,32 +1,32 @@
 export function getMonth(month){
     if (month < 1 || month > 12)
-        return('Число не попадает в диапазон');
+        return('Number out of range');
     else if (month == 12)
-       return  'декабрь';
+       return  'December';
     else if (month == 1)
-        return 'январь';
+        return 'January';
     else if (month == 2)
-        return 'февраль';
+        return 'February';
     else if (month == 3)
-        return 'март';
+        return 'March';
     else if (month == 4)
-        return 'апрель';
+        return 'April';
     else if (month == 5)
-        return 'май';
+        return 'May';
     else if (month == 6)
-        return 'июнь';
+        return 'June';
     else if (month == 7)
-        return 'июль';
+        return 'July';
     else if (month == 8)
-        return 'август';
+        return 'August';
     else if (month == 9)
-        return 'сентябрь';
+        return 'September';
     else if (month == 10)
-        return 'октябрь';
+        return 'October';
     else if (month == 11)
-        return 'ноябрь';
+        return 'November';
     else if (typeof(month) != Number)
-        return 'Ошибка. Должно быть число';
+        return 'Error. There must be a number';
 }
 
 export const repeatWord = (word = 'test', count = 3) => {
@@ -47,7 +47,7 @@ export function countDown(n=3){
         for (let i = n; i > 0 ; i--){
             result += `${i} `    
            }
-    }else return 'Данные неверны';
+    }else return 'Data is incorrect';
 
     return result.slice(0, -1);
 }
